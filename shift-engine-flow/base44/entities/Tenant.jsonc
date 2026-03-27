@@ -1,0 +1,106 @@
+{
+  "name": "Tenant",
+  "type": "object",
+  "properties": {
+    "domain": {
+      "type": "string",
+      "description": "Unique domain for this tenant (e.g., autoservis-praha.cz)"
+    },
+    "brand_name": {
+      "type": "string",
+      "description": "Display name of the business"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "URL to tenant logo"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country name"
+    },
+    "city": {
+      "type": "string",
+      "description": "City name"
+    },
+    "address": {
+      "type": "string",
+      "description": "Full address"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string",
+      "description": "Hero heading on homepage"
+    },
+    "subheading": {
+      "type": "string",
+      "description": "Hero subheading on homepage"
+    },
+    "footer_text": {
+      "type": "string",
+      "description": "Text displayed in footer"
+    },
+    "primary_color": {
+      "type": "string",
+      "description": "Primary brand color (hex)"
+    },
+    "accent_color": {
+      "type": "string",
+      "description": "Accent brand color (hex)"
+    },
+    "default_meta_title": {
+      "type": "string"
+    },
+    "default_meta_description": {
+      "type": "string"
+    },
+    "social_facebook": {
+      "type": "string"
+    },
+    "social_instagram": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "domain",
+    "brand_name"
+  ],
+  "rls": {
+    "create": {
+      "created_by": "{{user.email}}"
+    },
+    "read": {},
+    "update": {
+      "$or": [
+        {
+          "created_by": "{{user.email}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "delete": {
+      "$or": [
+        {
+          "created_by": "{{user.email}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    }
+  }
+}
