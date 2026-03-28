@@ -129,7 +129,7 @@ export default function Navbar() {
                 </button>
               ))}
               <button
-                onClick={() => scrollTo('#dealerships')}
+                onClick={() => window.location.href = "https://czechskills2026.denisdrexler.cz"}
                 className="w-full mt-2 px-5 py-3 rounded-full bg-velocity text-white text-sm font-semibold text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-velocity focus-visible:ring-offset-2"
                 aria-label="Přejít na seznam našich autosalonů"
               >
