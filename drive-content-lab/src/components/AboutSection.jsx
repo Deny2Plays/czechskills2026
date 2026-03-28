@@ -122,7 +122,7 @@ export default function AboutSection() {
         </div>
 
         {/* Team */}
-        <div className="mt-20">
+        <div className="mt-20 flex flex-col justify-center">
           <p className="font-mono text-velocity text-sm tracking-widest uppercase mb-8">Náš tým</p>
           <div className="grid sm:grid-cols-2 gap-6 max-w-3xl">
             {team.map((member) => (
