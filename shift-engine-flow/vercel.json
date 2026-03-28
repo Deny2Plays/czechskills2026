@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://api.base44.io/api/:path*"
+    },
+    {
+      "source": "/app-logs/:path*",
+      "destination": "https://api.base44.io/app-logs/:path*"
+    }
+  ]
+}
