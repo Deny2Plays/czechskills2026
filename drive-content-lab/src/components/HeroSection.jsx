@@ -75,7 +75,7 @@ export default function HeroSection() {
             KONTAKTY
           </button>
           <button
-            onClick={() => scrollTo('#dealerships')}
+            onClick={() => window.location.href = "https://czechskills2026.denisdrexler.cz"}
             className="px-8 py-3.5 rounded-full bg-velocity text-white font-semibold text-sm shimmer-btn hover:bg-velocity-dark transition-colors animate-pulse-glow focus:outline-none focus-visible:ring-2 focus-visible:ring-velocity focus-visible:ring-offset-2"
             aria-label="Přejít na seznam našich autosalonů">
             
