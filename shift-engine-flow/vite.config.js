@@ -20,4 +20,5 @@ export default defineConfig({
   ]
 });
 
+console.log("AAAAA DEBUG TEST 123")
 console.log("APP_ID:", process.env.BASE44_APP_ID)
