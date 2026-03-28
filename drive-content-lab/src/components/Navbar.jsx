@@ -88,7 +88,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="flex items-center gap-3">
             <button
-              onClick={() => scrollTo('#dealerships')}
+              onClick={() => window.location.href = "https://czechskills2026.denisdrexler.cz"}
               className="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full bg-velocity text-white text-sm font-semibold shimmer-btn hover:bg-velocity-dark transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-velocity focus-visible:ring-offset-2"
               style={{ filter: 'drop-shadow(0 0 15px rgba(0,87,255,0.3))' }}
               aria-label="Přejít na seznam našich autosalonů"
