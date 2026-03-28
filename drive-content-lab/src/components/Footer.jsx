@@ -16,7 +16,7 @@ export default function Footer() {
               className="flex items-center gap-2 mb-4 group"
               aria-label="AutoContent Pro – domů"
             >
-              <div className="w-8 h-8 rounded-lg bg-velocity flex items-center justify-center overflow-hidden">
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden">
                 <img
                   src="https://media.base44.com/images/public/69c7972cb0777a84d48a3b47/8acbcb2a2_Gemini_Generated_Image_6nvztj6nvztj6nvz_1.png"
                   alt="AUTOCONTENT PRO"
