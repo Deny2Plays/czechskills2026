@@ -78,7 +78,7 @@ export default function ProcessSection() {
   return (
     <section id="process" className="relative py-24 sm:py-32 bg-muted/30" aria-labelledby="process-heading">
       <div className="absolute inset-0 grid-bg opacity-20" />
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
