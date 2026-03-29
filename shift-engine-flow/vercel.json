@@ -19,6 +19,6 @@
     {
       "source": "/(?!manifest.json|api/|app-logs/|analytics/).*",
       "destination": "/index.html"
-    }
+    },
   ]
 }
