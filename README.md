@@ -2,6 +2,6 @@
 drive-content-lab: prezentace
 shift-engine-flow: hlavní CMS webová aplikace
 
-Vytvořil Denis Drexler a Samuel Kopa
+Vytvořil Denis Drexler a Samuel Kopa\n
 https://denisdrexler.cz
 https://samuelkopa.cz
