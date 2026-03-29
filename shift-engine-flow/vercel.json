@@ -2,15 +2,15 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://api.base44.io/api/:path*"
+      "destination": "https://api.base44.com/api/:path*"
     },
     {
       "source": "/app-logs/:path*",
-      "destination": "https://api.base44.io/app-logs/:path*"
+      "destination": "https://api.base44.com/app-logs/:path*"
     },
     {
       "source": "/analytics/:path*",
-      "destination": "https://api.base44.io/analytics/:path*"
+      "destination": "https://api.base44.com/analytics/:path*"
     }
   ]
 }
