@@ -50,14 +50,22 @@ export default function Navbar() {
 
           {/* Logo */}
           <a
-            href="#top"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             className="flex items-center gap-2 group"
             aria-label="AutoContent Pro – domů"
           >
-            <div className="w-8 h-8 rounded-lg bg-velocity flex items-center justify-center">
-              <span className="text-white font-mono font-bold text-sm">A</span>
+            <div className="w-8 h-8 rounded-lg bg-velocity flex items-center justify-center overflow-hidden">
+              <img
+                src="https://media.base44.com/images/public/69c7972cb0777a84d48a3b47/8acbcb2a2_Gemini_Generated_Image_6nvztj6nvztj6nvz_1.png"
+                alt="AUTOCONTENT PRO"
+                className="w-full h-full object-contain"
+              />
             </div>
-
+          
             <span className="font-inter font-bold text-foreground text-lg tracking-tight hidden sm:block">
               Auto<span className="text-velocity">Content</span>
             </span>
