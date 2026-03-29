@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/manifest.json",
+      "destination": "https://api.base44.io/api/apps/manifests/69c7a8db0cf74c07a07f1fd2/manifest.json"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://api.base44.io/api/:path*"
     },
@@ -11,6 +15,10 @@
     {
       "source": "/analytics/:path*",
       "destination": "https://api.base44.io/analytics/:path*"
+    },
+    {
+      "source": "/(?!manifest.json|api/|app-logs/|analytics/).*",
+      "destination": "/index.html"
     }
   ]
 }
